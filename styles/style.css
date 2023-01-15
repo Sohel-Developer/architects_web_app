@@ -3,6 +3,10 @@
 
 /* Basic */
 
+.hide{
+    display: none;
+}
+
 :root {
     --first-color: #FF900E;
     --second-color: #727272;
@@ -18,10 +22,38 @@
 img{
     max-width: 100%;
 }
+.text-center{
+    text-align: center;
+}
 
 .container{
     width: 1140px;
     margin: 0 auto;
+}
+
+/* Sponsore Styles */
+
+.sponsore__title{
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--black-color);
+    margin-bottom: 24px;
+}
+
+.sponsore__des{
+    color: var(--second-color);
+    max-width: 542px;
+    margin: 0 auto;
+}
+
+.sponsore__list{
+    margin-top: 50px;
+display: flex;
+gap: 50px;
+
+} 
+.sponsore__list img{
+    filter: grayscale(100%);
 }
 
 /* Footer Style */
@@ -38,5 +70,14 @@ color: var(--text-color)
 @media screen and (max-width:576px) {
     .container{
         width: 100%;
+        padding: 20px;
+    }
+    .sponsore__list{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .sponsore__list img{
+        width: 165px;
+        margin: 0 auto;
     }
 }
