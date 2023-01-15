@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
 /* Basic */
-
-.hide {
-  display: none;
-}
-
 :root {
   --first-color: #ff900e;
   --second-color: #727272;
@@ -31,12 +26,106 @@ img {
   margin: 0 auto;
 }
 
+section {
+  margin: 70px 0px;
+}
+
+.btn {
+  padding: 20px 25px;
+  background: var(--first-color);
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* NAvbar */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.nav__logo {
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--black-color);
+}
+
+.nav__iteam {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+.navLink {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+/* Header Styles */
+
+#header {
+  padding: 50px 0px;
+  background: rgba(255, 144, 14, 0.1);
+}
+.header__info {
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+.header__info > h2 {
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--black-color);
+}
+.header__info > p {
+  color: var(--second-color);
+  margin: 20px 0;
+}
+
+.bannerImg {
+  margin-top: 30px;
+}
+
+/* Main Features styles */
+
+.main__features {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.featureImg {
+  width: 50%;
+}
+.featureText {
+  width: 50%;
+}
+.featureText > h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--black-color);
+}
+.featureText > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--second-color);
+}
+.featureIteam {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.featureIteam img {
+  width: 50%;
+}
+
 /* Features section Styles */
 .features {
   display: flex;
   gap: 100px;
 }
-
 
 .features__info > h2 {
   font-weight: 700;
@@ -61,11 +150,11 @@ img {
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
 }
-.feature__iteam>h4{
-    font-weight: 600;
-font-size: 20px;
-color: var(--black-color);
-margin-bottom: 10px;
+.feature__iteam > h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--black-color);
+  margin-bottom: 10px;
 }
 
 .features__img {
@@ -149,6 +238,7 @@ margin-bottom: 10px;
   margin-top: 50px;
   display: flex;
   gap: 50px;
+  justify-content: space-between;
 }
 .sponsore__list img {
   filter: grayscale(100%);
@@ -169,26 +259,72 @@ margin-bottom: 10px;
     width: 100%;
     padding: 20px;
   }
-  .features{
+
+  #header {
+    padding: 0;
+  }
+  .Navbar {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .nav__logo {
+    margin-bottom: 20px;
+  }
+  .nav__iteam {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header__info {
+    width: 100%;
+  }
+
+  .header__info > h2 {
+    font-size: 50px;
+  }
+
+  #main__features {
+    margin-top: 0;
+  }
+  .main__features {
+    flex-direction: column;
+  }
+
+  .featureIteam {
+    flex-direction: column;
+  }
+
+  .featureText,
+  .featureImg,
+  .featureIteam img {
+    width: 100%;
+  }
+
+  .features {
     flex-direction: column;
     gap: 20px;
   }
-  .experience{
+  .experience {
     left: 0;
     bottom: -110px;
+    width: 100%;
+    padding: 10px 15px;
   }
-  .feature__iteam{
+  .feature__iteam {
     width: 100%;
     text-align: justify;
   }
-  .features__info > h2, .features__info > p{
+  .features__info > h2,
+  .features__info > p {
     width: 100%;
   }
-  
+
   .our__info__iteam {
     width: 100%;
-    gap: 20px;
+    gap: 70px;
     justify-content: center;
+  }
+  .our__info__des {
+    width: 100%;
   }
   .sponsore__list {
     gap: 20px;
@@ -198,20 +334,22 @@ margin-bottom: 10px;
     width: 165px;
     margin: 0 auto;
   }
-
 }
 
 /* Tablet Responsive */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .container {
     padding: 0px 20px;
   }
+  #header {
+    background: none;
+  }
 
-  .features{
+  .features {
     align-items: center;
   }
 
-  .experience{
+  .experience {
     left: -60px;
     bottom: -150px;
   }
