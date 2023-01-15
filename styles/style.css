@@ -30,6 +30,55 @@ img{
     width: 1140px;
     margin: 0 auto;
 }
+/* Our Information */
+.our__details{
+
+}
+.our__info{
+
+}
+
+
+.our__info__title{
+    
+font-weight: 700;
+font-size: 45px;
+color: var(--black-color);
+}
+.our__info__des{
+    margin-top: 24px;
+    width: 542px;
+    color: var(--second-color);
+
+}
+.our__info__iteam{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.our__iteam{
+    cursor: pointer;
+    width: 242px;
+    padding: 40px;
+    border: 1px solid #FF900E;
+border-radius: 8px;
+text-align: center;
+transition: all 1s;
+}
+.our__iteam:hover{
+    transform: scale(1.1);
+}
+.our__iteam h2{
+    color: var(--text-color);
+    font-weight: 600;
+font-size: 45px;
+}
+.our__iteam h4{
+    color: var(--second-color);
+}
+
+
 
 /* Sponsore Styles */
 
@@ -79,5 +128,10 @@ color: var(--text-color)
     .sponsore__list img{
         width: 165px;
         margin: 0 auto;
+    }
+    .our__info__iteam{
+        width: 100%;
+       gap: 20px;
+       justify-content: center;
     }
 }
