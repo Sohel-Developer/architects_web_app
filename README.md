@@ -1,3 +1,3 @@
 # architects_web_app
-<img src="./WebImage.PNG"  >
+<img src="https://github.com/Sohel-Developer/architects_web_app/blob/main/WebImage.png"  >
 ![My Image](WebImage.PNG)
